@@ -1,0 +1,24 @@
+/*Allgemein und Body*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #e8f0f7;
+}
+/*Styling Header, Title*/
+
+header {
+  background-color: #fefffe;
+  border: 2px solid;
+  border-color: #c2d5e5;
+}
+
+h1 {
+  background-color: #fefffe;
+  text-align: center;
+  color: #93b0c8;
+}
