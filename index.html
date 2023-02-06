@@ -2,14 +2,59 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
   </head>
   <body>
+    <!-- Header -->
+
     <header>
       <h1>Quiz App</h1>
     </header>
+
+    <!-- Main: Question cards -->
+
+    <main>
+      <article class="card one">
+        <a class="fa fa-bookmark-o" href="#bookmark_unfilled"></a>
+        <p class="question one">What property flips the axes in flexbox?</p>
+        <button type="button" class="show answer one">Show answer</button
+        ><br /><br /><br />
+        <article class="tags">
+          <a class="w3-tag w3-blue" href="#category1">#html</a>
+          <a class="w3-tag w3-blue" href="#category2">#flexbox</a>
+          <a class="w3-tag w3-blue" href="#category3">#css</a>
+        </article>
+      </article>
+
+      <article class="card two">
+        <a class="fa fa-bookmark" href="#bookmark_unfilled"></a>
+        <p class="question one">What property flips the axes in flexbox?</p>
+        <button type="button" class="show answer one">Show answer</button>
+      </article>
+
+      <article class="card three">
+        <a class="fa fa-bookmark-o" href="#bookmark_unfilled"></a>
+        <p class="question one">What property flips the axes in flexbox?</p>
+        <button type="button" class="show answer one">Show answer</button>
+      </article>
+    </main>
+
+    <!-- Footer: Navigation -->
+
+    <footer>
+      <nav class="navbar">
+        <a class="icon fa fa-home" href="#home"></a>
+        <a class="icon fa fa-bookmark-o" href="#bookmarks"></a>
+        <a class="icon fa fa-user-circle-o" href="#profile"></a>
+      </nav>
+    </footer>
   </body>
 </html>
