@@ -1,4 +1,4 @@
-/*Allgemeines und Body*/
+/*General and body*/
 
 * {
   box-sizing: border-box;
@@ -24,7 +24,6 @@ header {
   border-color: #c2d5e5;
   position: sticky;
   top: 0;
-  margin-top: 0;
   height: 100px;
   z-index: 10;
 }
@@ -37,7 +36,7 @@ h1 {
 
 /*Article*/
 
-article {
+.card {
   background-color: #fefffe;
   color: #6185a3;
   position: relative;
@@ -51,14 +50,17 @@ article {
 button {
   background-color: #fefffe;
   color: #6185a3;
-  border-color: #6185a3;
+  border: 3px solid #93b0c8;
   border-radius: 10%;
   width: 150px;
   height: 75px;
-  margin-top: 30px;
+  position: absolute;
+  right: 50%;
+  left: 40%;
+  top: 45%;
 }
 
-article > a {
+.card > :first-child {
   background-color: #fefffe;
   color: #93b0c8;
   border-color: #93b0c8;
@@ -66,6 +68,12 @@ article > a {
   position: absolute;
   top: -20px;
   right: 50px;
+}
+
+.tags {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
 }
 
 /*Styling footer, navigation*/
