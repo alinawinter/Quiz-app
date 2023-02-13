@@ -28,7 +28,7 @@ a:hover {
   color: #93b0c8;
 }
 
-/*Styling header, title*/
+/*Header, title*/
 
 header {
   background-color: #fefffe;
@@ -52,78 +52,6 @@ header:hover {
 
 .heading:hover {
   color: #6185a3;
-}
-
-/*Styling of quiz cards*/
-
-.quiz-card {
-  background-color: #fefffe;
-  border: 2px solid #c2d5e5;
-  margin: 5% auto;
-  padding: 5%;
-  width: 80vw;
-  height: 40vh;
-  border-radius: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1rem;
-}
-
-.quiz-card:hover {
-  border: 2px solid #93b0c8;
-}
-
-.quiz-card > a {
-  color: #93b0c8;
-  border-color: #93b0c8;
-  align-self: flex-end;
-  --ggs: 2.5;
-}
-
-article:nth-child(2) > a {
-  color: #6185a3;
-}
-
-.quiz-card__question {
-  color: #6185a3;
-  font-weight: bold;
-  text-align: center;
-}
-
-.quiz-card__button--unflipped {
-  background-color: #fefffe;
-  color: #6185a3;
-  font-weight: bold;
-  border: 2px solid #93b0c8;
-  border-radius: 10%;
-  width: 50%;
-  height: 30%;
-}
-
-button:hover {
-  font-style: italic;
-  font-weight: bold;
-  background-color: #c2d5e5;
-}
-
-.quiz-card__answer--invisible {
-  display: none;
-}
-
-.quiz-card__tags {
-  color: #6185a3;
-  align-self: flex-start;
-}
-
-.quiz-card__tag {
-  color: #6185a3;
-  background-color: #e8f0f7;
-  border: 2px solid #93b0c8;
-  border-radius: 10%;
-  width: 20%;
-  height: 20%;
 }
 
 /*Styling footer, navigation*/
@@ -167,10 +95,16 @@ footer {
 
 /* media queries */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .quiz-card {
-    width: ;
-    height: ;
+    width: 80vw;
+    height: 50vh;
+  }
+}
+@media screen and (min-width: 769px) {
+  .quiz-card {
+    width: 80vw;
+    height: 50vh;
   }
 }
 

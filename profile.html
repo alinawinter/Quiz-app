@@ -21,33 +21,38 @@
     <!-- Profile -->
 
     <main>
+    <article class="profilelayout">
         <section class="Introduction">
-            <i class="gg-profile"></i>
+          <i class="gg-profile"></i>
             <h2 class = "Introduction__name">Name</h2>
         </section>
     <section class="About-me">
         <h3 class = "About-me__heading">About me</h3>
         <p class = "About-me__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa facere molestias voluptates cupiditate reiciendis harum sed soluta placeat eaque deleniti. Temporibus tenetur illum nesciunt quasi quibusdam quae cum nulla ab.</p>
-    </section class="Settings">
+    </section>
     <section class="Counter">
         <div class="Counter__questions"></div>
         <div class="Counter__bookmarks"></div>
     </section>
-    <sectio class = "Settings">
+    <section class = "Settings">
         <h3 class = "Settings__heading">Settings</h3>
         <h4 class = "Settings__darkmode">Dark Mode</h4>
-        <button class= "Settings__darkmode--off" type="button"></button>
-    </sectio>
+        <label class="switch">
+          <input type="checkbox" class= "Settings__darkmode--off">
+          <span class="slider round"></span>
+        </label>
+    </section>
+</section>
     </main>
 
     <!-- Footer: Navigation -->
 
     <footer>
       <nav class="navbar">
-        <a class="navbar__home" href="./index.html"
+        <a class="navbar__home" href="./index.html" aria-label="Click to go to home"
           ><i class="gg-home-alt"></i
         ></a>
-        <a class="navbar__bookmark" href="./bookmarks.html"
+        <a class="navbar__bookmark" href="./bookmarks.html" aria-label="Click to view bookmarked questions"
           ><i class="gg-bookmark"></i
         ></a>
         <a class="navbar__profile--highlighted" href="./profile.html"
