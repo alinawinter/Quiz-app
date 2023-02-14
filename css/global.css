@@ -39,19 +39,11 @@ header {
   z-index: 10;
 }
 
-header:hover {
-  border: 2px solid #93b0c8;
-}
-
 .heading {
   color: #93b0c8;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-}
-
-.heading:hover {
-  color: #6185a3;
 }
 
 /*Styling footer, navigation*/
