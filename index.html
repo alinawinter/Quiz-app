@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href="https://css.gg/home.css" rel="stylesheet" />
+    <link href="https://css.gg/home-alt.css" rel="stylesheet" />
+    <link href="https://css.gg/bookmark.css" rel="stylesheet" />
+    <link href="https://css.gg/profile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link href="./bookmarks.html" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,34 +16,79 @@
     <!-- Header -->
 
     <header>
-      <h1>Quiz App</h1>
+      <h1 class="heading">Quiz App</h1>
     </header>
 
-    <!-- Main: Question cards -->
+    <!-- Main: Quiz cards -->
+
+    <!-- Quiz card 1-->
 
     <main>
-      <article class="card one">
-        <a class="fa fa-bookmark-o" href="#bookmark_unfilled"></a>
-        <p class="question one">What property flips the axes in flexbox?</p>
-        <button type="button" class="show answer one">Show answer</button
-        ><br /><br /><br />
-        <article class="tags">
-          <a class="w3-tag w3-blue" href="#category1">#html</a>
-          <a class="w3-tag w3-blue" href="#category2">#flexbox</a>
-          <a class="w3-tag w3-blue" href="#category3">#css</a>
+      <article class="quiz-card">
+        <a
+          class="quiz-card__bookmark--unfilled"
+          href="#bookmarks"
+          aria-label="Click to bookmark"
+          ><i class="gg-bookmark"></i
+        ></a>
+        <p class="quiz-card__question">
+          What property flips the axes in flexbox?
+        </p>
+        <button
+          class="quiz-card__button--unflipped"
+          type="button"
+          aria-label="Click to show answer"
+        >
+          Show answer
+        </button>
+        <p class="quiz-card__answer--invisible">flex-direction</p>
+        <article class="quiz-card__tags">
+          <a class="quiz-card__tag" href="#category1">#html</a>
+          <a class="quiz-card__tag" href="#category2">#flexbox</a>
+          <a class="quiz-card__tag" href="#category3">#css</a>
         </article>
       </article>
 
-      <article class="card two">
-        <a class="fa fa-bookmark" href="#bookmark_unfilled"></a>
-        <p class="question one">What property flips the axes in flexbox?</p>
-        <button type="button" class="show answer one">Show answer</button>
+      <!-- Quiz card 2 -->
+
+      <article class="quiz-card">
+        <a
+          class="quiz-card__bookmark--unfilled"
+          href="#bookmarks"
+          aria-label="Click to unbookmark"
+          ><i class="gg-bookmark"></i
+        ></a>
+        <p class="quiz-card__question">
+          What property flips the axes in flexbox?
+        </p>
+        <button
+          class="quiz-card__button--unflipped"
+          type="button"
+          aria-label="Click to show answer"
+        >
+          Show answer
+        </button>
       </article>
 
-      <article class="card three">
-        <a class="fa fa-bookmark-o" href="#bookmark_unfilled"></a>
-        <p class="question one">What property flips the axes in flexbox?</p>
-        <button type="button" class="show answer one">Show answer</button>
+      <!-- Quiz card 3 -->
+
+      <article class="quiz-card">
+        <a
+          class="quiz-card__bookmark--unfilled"
+          href="gg-bookmark"
+          aria-label="Click to bookmark"
+          ><i class="gg-bookmark"></i
+        ></a>
+        <p class="quiz-card__question">
+          What property flips the axes in flexbox?
+        </p>
+        <button
+          class="quiz-card__button--unflipped"
+          type="button"
+          aria-label="Click to show answer"
+        >
+          Show answer
+        </button>
       </article>
     </main>
 
@@ -51,9 +96,21 @@
 
     <footer>
       <nav class="navbar">
-        <a class="icon fa fa-home" href="#home"></a>
-        <a class="icon fa fa-bookmark-o" href="#bookmarks"></a>
-        <a class="icon fa fa-user-circle-o" href="#profile"></a>
+        <a
+          class="navbar__home--highlighted"
+          href="./index.html"
+          aria-label="Click to go to home"
+          ><i class="gg-home-alt"></i
+        ></a>
+        <a
+          class="navbar__bookmark"
+          href="./bookmarks.html"
+          aria-label="Click to view bookmarked questions"
+          ><i class="gg-bookmark"></i
+        ></a>
+        <a class="navbar__profile" href="./profile.html">
+          <i class="gg-profile"></i
+        ></a>
       </nav>
     </footer>
   </body>
